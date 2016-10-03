@@ -1,0 +1,231 @@
+﻿ ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+ }
+ ::-webkit-scrollbar-track {
+      background-color: #e6e6e8;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.5); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #e6e6e8;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: #e6e6e8;
+}
+
+body{
+	overflow-x:hidden;
+}
+
+.image-1 {
+   background: url('image/BTS_main2.jpg') center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: -10px;
+   margin-left: -8px;
+   margin-right: 0px;
+   height: 750px;
+   width: 100vw;
+    overflow-x: hidden;
+    overflow-y: none;
+}
+
+.image-2 {
+   background: url('image/BTS_main3.jpg') center;
+   background-repeat: no-repeat;
+   background-size: cover;
+     margin-top: -10px;
+   margin-left: -8px;
+   margin-right: 0px;
+   margin-bottom: -10px;
+   height: 750px;
+   width: 100vw;
+    overflow-x: hidden;
+    overflow-y: none;
+}
+
+h1 {
+	font-family: 'Righteous',cursive;
+	font-size: 145px;
+	color: white;	
+	letter-spacing: 12px;
+	word-spacing: 5px;
+	margin: auto;
+}
+
+h2 {
+	font-family: 'Rajdhani',cursive;
+	font-size: 35px;
+	color: black;	
+	margin: auto;
+	border-bottom: 2px solid #000;	
+	padding:10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h3 {
+	font-family: 'Open Sans',cursive;
+	font-size: 15px;
+	color: black;	
+	margin-left: 20px;
+}
+
+h4 {
+	font-family: 'Rajdhani',cursive;
+	font-size: 35px;
+	color: white;	
+	margin-left: 20px;
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+pre{
+	font-family: 'Open Sans',cursive;
+	font-size: 15px;
+	color: #56585b;	
+	margin-left: -10px;
+}
+
+
+
+input{
+  display:none;
+}
+
+.label{
+	height: 55px;
+	width: 55px;
+	position: fixed;
+	margin-top: 10px;
+}
+
+.label:hover{
+  cursor: pointer;
+  content: url('image/menublack.png');
+  height: 55px;
+  width: 55px;
+}
+
+.overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+	z-index: 10000;
+}
+
+.overlay label{
+	width: 58px;
+	height:58px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: url('http://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png');
+	z-index: 100;
+  cursor:pointer;
+}
+
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+
+.overlay ul a {
+	font-weight: 900;
+	display: block;
+	color: white;
+    text-decoration:none;
+	font-size: 54px;
+	padding: 10px;
+	font-family: 'Righteous',cursive;
+}
+
+.overlay ul a:hover {
+	color: #a3c2c2;
+}
+
+.overlay li a:active {
+	color:  #888844;
+}
+
+.lower~.overlay-hugeinc{
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+#op:checked~.overlay-hugeinc{
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.8;
+}
+
+#op:checked~.overlay-hugeinc nav ul {
+	opacity: 1;
+}
+
+article {
+	display: inline-block;
+	margin-top: 100px;
+	margin-left: 50px;
+	width: 700px;
+	max-height: 600px;
+	overflow-y: scroll;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	padding:5px;
+}
+
+#article-1 {
+	display: inline-block;
+	margin-left: 50px;
+	width: 500px;
+	max-height: 300px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	padding:5px;
+	margin-bottom: 300px;
+}
+
+#img-1 {
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
+  	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+#img-1:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+audio {
+ display: none;
+}

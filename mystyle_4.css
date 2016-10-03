@@ -1,0 +1,230 @@
+﻿ ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+ }
+ ::-webkit-scrollbar-track {
+      background-color: #e6e6e8;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.5); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #e6e6e8;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: #e6e6e8;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: none;
+    width: 100vw;
+}
+
+.image-1 {
+   background: url('image/background2.jpg') center  fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin:-10px;
+   height: 800px;
+   width: 100vw;
+    overflow-x: hidden;
+    overflow-y: none;
+}
+
+.image-2 {
+   margin:-10px;
+   height: 720px;
+   width: 100vw;
+   background-size: cover;
+   background-image:url('image/background3.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: none;
+}
+
+.image-3 {
+   margin:-10px;
+   height: 720px;
+   width: 100vw;
+   background-size: cover;
+   background-image:url('image/background4.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: none;
+}
+
+header {
+	background:  #000;
+	border-bottom: 2px solid #1b1818;
+	background-image:url('image/header_black.jpg');
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+    position: absolute;
+    width: 100vw;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    overflow-x: hidden;
+    overflow-y: none;
+}
+
+h1 {
+	font-family: 'Righteous',cursive;
+	position: relative;
+	font-size: 50px;
+	color: #ffffff;	
+	letter-spacing: 12px;
+	word-spacing: 5px;
+	top: 10px;
+	left: 630px;
+	margin: auto;
+}
+
+input{
+  display:none;
+}
+
+.label{
+	opacity: 1.0;
+	height: 55px;
+	width: 55px;
+	position: fixed;
+	margin-top: 10px;
+	z-index: 100;
+}
+
+.label:hover{
+  opacity: 1.0;
+  cursor: pointer;
+  content: url('image/menublack.png');
+  height: 55px;
+  width: 55px;
+  z-index: 100;
+}
+
+.overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+  z-index: 5000;
+}
+
+.overlay label{
+	width: 58px;
+	height:58px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: url('http://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png');
+	z-index: 100;
+  cursor:pointer;
+}
+
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+
+.overlay ul a {
+	font-weight: 900;
+	display: block;
+	color: white;
+    text-decoration:none;
+	font-size: 54px;
+	padding: 10px;
+	font-family: 'Righteous',cursive;
+}
+
+.overlay ul a:hover {
+	color: #a3c2c2;
+}
+
+.overlay ul a:active {
+	color:  #888844;
+}
+
+.lower~.overlay-hugeinc{
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+#op:checked~.overlay-hugeinc{
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.8;
+}
+
+#op:checked~.overlay-hugeinc nav ul {
+	opacity: 1;
+}
+
+article {
+	height:780px;
+	min-width: 100vw;
+}
+
+h2 {
+	text-align: center;
+	font-size: 25px;
+	font-family:'Work Sans' sans-serif;
+}
+
+img {
+    padding: 2px;
+}
+
+.thumbnail {
+	position: absolute;
+	width: 100%;
+    -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+    -moz-transform: translate(-50%,-50%); /* Firefox */
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -o-transform: translate(-50%,-50%); /* Opera */
+    transform: translate(-50%,-50%);
+}
+
+.image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all 1s ease; /* Firefox */
+  	-o-transition: all 1s ease; /* IE 9 */
+  	-ms-transition: all 1s ease; /* Opera */
+  	transition: all 1s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}

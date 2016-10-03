@@ -1,0 +1,358 @@
+ ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+ }
+ ::-webkit-scrollbar-track {
+      background-color: #e6e6e8;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.5); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #e6e6e8;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: #e6e6e8;
+}
+
+header {
+	background:  #A9A9A9;
+	border-bottom: 2px solid #1b1818;
+	background-image:url('image/header.jpg');
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+    position: absolute;
+    min-width: 100%;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+	overflow-x: hidden;
+    overflow-y: none;
+}
+
+.image-1 {
+   background: url('image/background6.png') center  fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin:-10px;
+   height: 880px;
+   width: 100vw;
+    overflow-x: hidden;
+    overflow-y: none;
+}
+
+.image-2 {
+   margin:-10px;
+   height: 880px;
+   width: 100vw;
+   background-size: cover;
+   background-image:url('image/backgrounf7.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   overflow-x: none;
+   overflow-y: none;
+}
+
+.image-3 {
+   margin:-10px;
+   height: 720px;
+   width: 100vw;
+   background-size: cover;
+   background-image:url('image/background8.jpg');
+   background-position: 0 60%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: none;
+}
+
+h1 {
+	font-family: 'Righteous',cursive;
+	position: relative;
+	font-size: 50px;
+	color: #000000;	
+	letter-spacing: 12px;
+	word-spacing: 5px;
+	top: 10px;
+	left: 790px;
+	margin: auto;
+}
+
+pre {
+	font-size: 30px;
+	font-family: 'Norican' cursive;
+}
+
+#pre-1 {
+	font-size: 30px;
+	font-family: 'Quicksand' sans-serif;
+}
+
+#pre-2 {
+	font-size: 30px;
+	padding-top: 60px;
+	font-family: 'Caesar Dressing', cursive;
+}
+
+input{
+  display:none;
+}
+
+.label{
+	height: 55px;
+	width: 55px;
+	position: fixed;
+	margin-top: -20px;
+}
+
+.label:hover{
+  cursor: pointer;
+  content: url('image/menublack.png');
+  height: 55px;
+  width: 55px;
+}
+
+.overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+}
+
+.overlay label{
+	width: 58px;
+	height:58px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: url('http://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png');
+	z-index: 50000;
+  cursor:pointer;
+}
+
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+
+.overlay ul a {
+	font-weight: 900;
+	display: block;
+	color: white;
+    text-decoration:none;
+	font-size: 54px;
+	padding: 10px;
+	font-family: 'Righteous',cursive;
+}
+
+.overlay ul a:hover {
+	color: #a3c2c2;
+}
+
+.overlay ul a:active {
+	color:  #888844;
+}
+
+.lower~.overlay-hugeinc{
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+#op:checked~.overlay-hugeinc{
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.8;
+}
+
+#op:checked~.overlay-hugeinc nav ul {
+	opacity: 1;
+}
+
+main {
+	margin-left: 200px;
+	font-size: 15px;
+    font-family:'Josefin Sans', sans-serif;
+	padding: 10px;
+}
+#main-2 {
+	margin-left: 200px;
+	font-size: 15px;
+    font-family:'Josefin Sans', sans-serif;
+}
+
+#main-3 {
+	margin-left: 200px;
+	margin-top: -30px;
+}
+
+
+#main-4 {
+	text-align: left;
+	margin-left: 290px;
+	margin-top: -30px;
+	font-size: 17px;
+    font-family:'Josefin Sans', sans-serif;
+	padding: 10px;
+}
+
+#main-5{
+	margin-left: 200px;
+	margin-top: 100px;
+	font-size: 15px;
+    font-family:'Josefin Sans', sans-serif;
+}
+
+#main-6{
+	text-align: left;
+	margin-left: 200px;
+	margin-top: -40px;
+	font-size: 17px;
+    font-family:'Josefin Sans', sans-serif;
+	padding: 10px;
+}
+
+#main-7{
+	text-align: left;
+	margin-left: 190px;
+	margin-top: -360px;
+	width: 190px;
+	font-size: 17px;
+    font-family:'Josefin Sans', sans-serif;
+	padding: 10px;
+	position: absolute;
+	color:white;
+}
+
+
+h3 {
+	font-size: 25px;
+    font-family:'Quicksand', sans-serif;
+	padding: 5px;
+	margin-top:10px;
+}
+
+h4 {
+	font-size: 15px;
+    font-family:'Josefin Sans', sans-serif;
+	padding: 10px;
+}
+
+h5 {
+	font-size: 25px;
+    font-family:'Quicksand', sans-serif;
+	padding: 10px;
+	margin-top:1px;
+}
+
+
+h6 {
+	font-size: 25px;
+    font-family:'Quicksand', sans-serif;
+	margin-top:5px;
+	margin-bottom: 15px;
+}
+
+article { 
+display: inline-block;
+margin-left: 25px;
+margin-top: 20px;
+width: 410px;
+background: rgba(153, 153, 153, 0.9);
+border-radius: 5px;
+padding:5px;
+}
+
+
+#article-2 { 
+display: inline-block;
+margin-top: 30px;
+margin-left: 300px;
+padding-bottom: 20px;
+width: 700px;
+background: rgba(153, 153, 153, 0.9);
+border-radius: 5px;
+}
+
+#article-3 { 
+display: inline-block;
+margin-top: 30px;
+margin-left: 160px;
+width: 410px;
+background: rgba(255, 255, 255, 0.8);
+border-radius: 5px;
+}
+
+#article-4 { 
+display: inline-block;
+margin-top: 10px;
+margin-left: 160px;
+width: 410px;
+background: rgba(255, 255, 255, 0.8);
+border-radius: 5px;
+}
+
+#article-5 { 
+display: inline-block;
+margin-top: 30px;
+margin-left: 155px;
+width: 1000px;
+background: rgba(255, 255, 255, 0.8);
+border-radius: 5px;
+padding-bottom: 20px;
+}
+
+#article-6 { 
+display: inline-block;
+margin-top: 10px;
+margin-left: 160px;
+width: 410px;
+background: rgba(0, 0, 0, 0.5);
+border-radius: 5px;
+}
+
+footer{
+	background:  #000000;
+    min-width: 100%;
+    height: 130px;
+    margin-bottom:-10px ;
+    margin-top:-180px ;
+    margin-right:-10px ;
+    margin-left:-10px ;
+}
+
+#img-1{
+	opacity: 0.5;
+}
+
+#img-1:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
